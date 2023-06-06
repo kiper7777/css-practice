@@ -1,0 +1,52 @@
+:root {
+    background-color: white;
+}
+
+* {
+    color: black;
+}
+
+.card-body h1 {
+    background-color: blue;
+}
+
+.green {
+    color: green;
+}
+
+#blue {
+    color: blue;
+}
+
+section .box p {
+    background-color: red;
+}
+
+section .box div {
+    background-color: green;
+}
+
+.brown {
+    background-color: brown;
+    color: white;
+}
+
+ul > li {
+    background-color: red;
+}
+
+button + span {
+    background-color: red;
+}
+
+.susid ~ p {
+    background-color: blue;
+    color: white;
+}
+
+.salo, #bread {
+    background-color: yellow;
+}
+
+
+
