@@ -1,0 +1,144 @@
+.page {
+    background: #FFFFFF;
+    padding: 0 15px;
+}
+
+.page_content {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.header {
+    padding: 24px;
+}
+
+.logo {
+    font-size: 17px;
+}
+
+.divider {
+    margin: 0;
+    height: 1px;
+    background: #DEE2E6;
+}
+
+.nav {  
+    display: block;
+}
+
+.nav_link {  
+    color: #343A40; 
+    font-size: 16px;
+    text-decoration: none; 
+}
+
+.nav_link:hover {
+    text-decoration: underline;
+    color: blue;
+}
+
+.nav_vertical > .nav_link {
+    display: block;    
+}
+
+.nav_inline > .nav_link:not(:last-child) { 
+    margin-right: 24px;
+}
+
+.nav_vertical > .nav_link:not(:last-child) { 
+    margin-bottom: 12px;
+}
+
+.header_nav_right {
+    margin-left: auto;
+    width: fit-content;
+}
+
+.page_block:not(:last-of-type) {
+    margin-bottom: 80px;
+}
+
+.footer {
+    padding: 24px 0;
+}
+
+.footer_copyright {
+    font-size: 14px;
+    color: #6C757D;
+    display: block;
+    margin-top: 12px;
+}
+
+.footer_title {
+    font-size: 20px;
+    color: #212529;
+    display: block;
+    margin-bottom: 12px;
+}
+
+.hero_title {
+    font-size: 56px;
+    color: #212529;
+    font-weight: 500;
+    margin-bottom: 12px;
+    text-align: center;
+}
+
+.hero_text {
+    font-size: 20px;
+    color: #212529;
+    text-align: center;
+    max-width: 585px;
+    margin: 0 auto;
+}
+
+.plans_card:not(:last-of-type) {
+    margin-right: 24px;
+}
+
+.card-header {
+    padding: 12px;
+    text-align: center;
+    font-size: 24px;
+    color: #212529;
+}
+
+.card-body {
+    padding: 24px;
+}
+
+.card_price_amount {
+    font-size: 40px;
+    color: #212529;
+}
+
+.card_price_duration {
+    font-size: 29px;
+    color: #6C757D;
+}
+
+.card_block {
+    text-align: center;
+}
+
+.card_block:not(:last-of-type) {
+    margin-bottom: 24px;
+}
+
+.card_description_item {
+    font-size: 16px;
+    color: #212529;
+
+    display: block;
+}
+
+..card_description_item:not(:last-of-type) {
+    margin-bottom: 12px;
+}
+
+.card_button {
+    display: block;
+    width: 100%;
+    font-size: 19px;
+    padding: 9px;
+}

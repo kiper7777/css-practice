@@ -1,0 +1,49 @@
+<div class='page'>
+  <div class='page_content'>
+    <div class="page_block">
+        <header class='header row g-0'>
+          <div class="col-3">
+          {{> logo}}
+          </div>  
+          <nav class='header_nav col-9'>
+            <div class="header_nav_right">
+            {{> nav list=header}}
+            </div>
+          </nav>
+        </header>
+        {{> divider }}
+    </div>
+
+    <div class="page_block">
+        {{> hero title=hero.title text=hero.text}}
+    </div>
+
+    <div class="page_block">
+      <main class="row g-0 plans">
+        {{#each plans}}
+
+          <div class="col plans_card">
+            {{> card data=this}}
+          </div>
+        {{/each}}
+      </main>
+    </div>
+     
+    <div class="page_block">
+        {{> divider }}
+        <footer class="row footer">
+          <div class="col-3">
+            {{> logo}}
+            <span class="footer_copyright">Copyright 2023-2024</span>
+          </div>
+
+          {{#each footer}}
+            <div class="col-3">
+              <span class="footer_title">{{title}}</span>
+              {{> nav list=links isVertical=true}}
+            </div>
+          {{/each}}
+        </footer>
+    </div>
+  </div>
+</div>

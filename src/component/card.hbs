@@ -1,0 +1,25 @@
+{{#with data}}
+  <div class="card">
+      <div class="card-header">
+          {{name}}
+      </div>
+      <div class="card-body">
+      <div class="card_block">
+          <span class="card_price_amount">
+          ${{price}}
+          </span>
+          <span class="card_price_duration">
+          / mo
+          </span>
+      </div>
+      <div class="card_block">
+          {{#each features}}
+          <span class="card_description_item">{{this}}</span>
+          {{/each}}
+      </div>
+      <div class="card_block">
+          <button class="btn {{#if @first}}btn-outline-primary{{else}}btn-primary{{/if}} card_button">{{button}}</button>
+      </div>
+      </div>
+  </div>
+{{/with}}
