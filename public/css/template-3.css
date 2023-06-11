@@ -1,3 +1,15 @@
+@font-face {
+    font-family: 'Segment';
+    src: url('/font/Segment-Regular.otf');
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Segment';
+    src: url('/font/Segment-SemiBold.otf');
+    font-weight: 400;
+}
+
 .page {
     background: #FFFFFF;
     padding: 0 15px;
@@ -165,37 +177,4 @@
 
 .preview_category_4 {
     color: #FF7A00;
-}
-
-.list_title {
-    font-weight: 500;
-    font-size: 32px;
-    color: #212529;
-    margin: 0;
-}
-
-.list_header {
-    padding-bottom: 12px;
-    border-bottom: 1px solid #DEE2E6;
-    margin-bottom: 40px;
-}
-
-.category_button {
-    font-size: 16px;
-    color: color: #6C757D;
-
-    padding: 10px 16px;
-
-    border-radius: 40px;
-    border: 1px solid #6C757D;
-
-    line-height: 100%;
-}
-
-.category_button:hover {
-    background-color: #6c757d12;
-}
-
-.list aside {
-    margin-left: 40px;
 }
