@@ -1,0 +1,16 @@
+{{#with data}}
+  <div class='preview'>
+    <div class='preview_header'>
+      <span class='preview_date'>{{date}}</span>
+
+      {{#each category}}
+        <span
+          class='preview_category preview_category_{{id}}'
+        >{{text}}</span>
+      {{/each}}
+    </div>
+    <strong class='preview_title'>{{title}}</strong>
+    <p class='preview_description'>{{text}}</p>
+    <a href='#'>Continue reading</a>
+  </div>
+{{/with}}

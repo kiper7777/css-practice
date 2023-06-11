@@ -1,0 +1,59 @@
+<div class='page'>
+  <div class='page_content'>
+    <div class="page_block">
+        <header class='header row g-0'>
+          <div class="col-3">
+          {{> logo}}
+          </div>  
+          <nav class='header_nav col-9'>
+            <div class="header_nav_right">
+            {{> nav list=header}}
+            </div>
+          </nav>
+        </header>
+        {{> divider }}
+    </div>
+
+    <div class="page_block">
+        <div class="hero">
+          {{#with hero}}
+            {{> hero title=title text=text}}
+            <a class="button" href="{{button.url}}">{{button.text}}</a>
+          {{/with}}
+        </div>
+    </div>
+
+    <div class="page_block">
+      <div class="row g-4">
+        {{#each preview}}
+          <div class="col-6">
+            {{> cardPreview data=this}}
+          </div>
+        {{/each}}
+      </div>
+    </div>
+
+    <div class="page_block">
+      <div class="row">
+        
+      </div>
+    </div>
+     
+    <div class="page_block">
+        {{> divider }}
+        <footer class="row footer">
+          <div class="col-3">
+            {{> logo}}
+            <span class="footer_copyright">Copyright 2023-2024</span>
+          </div>
+
+          {{#each footer}}
+            <div class="col-3">
+              <span class="footer_title">{{title}}</span>
+              {{> nav list=links isVertical=true}}
+            </div>
+          {{/each}}
+        </footer>
+    </div>
+  </div>
+</div>

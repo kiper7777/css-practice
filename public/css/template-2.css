@@ -1,0 +1,168 @@
+.page {
+    background: #FFFFFF;
+    padding: 0 15px;
+}
+
+.page_content {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.header {
+    padding: 24px;
+}
+
+.logo {
+    font-size: 17px;
+}
+
+.divider {
+    margin: 0;
+    height: 1px;
+    background: #DEE2E6;
+}
+
+.nav {  
+    display: block;
+}
+
+.nav_link {  
+    color: #343A40; 
+    font-size: 16px;
+    text-decoration: none; 
+}
+
+.nav_link:hover {
+    text-decoration: underline;
+    color: blue;
+}
+
+.nav_vertical > .nav_link {
+    display: block;    
+}
+
+.nav_inline > .nav_link:not(:last-child) { 
+    margin-right: 24px;
+}
+
+.nav_vertical > .nav_link:not(:last-child) { 
+    margin-bottom: 12px;
+}
+
+.header_nav_right {
+    margin-left: auto;
+    width: fit-content;
+}
+
+.page_block:not(:last-of-type) {
+    margin-bottom: 80px;
+}
+
+.footer {
+    padding: 24px 0;
+}
+
+.footer_copyright {
+    font-size: 14px;
+    color: #6C757D;
+    display: block;
+    margin-top: 12px;
+}
+
+.footer_title {
+    font-size: 20px;
+    color: #212529;
+    display: block;
+    margin-bottom: 12px;
+}
+
+.hero_title {
+    font-size: 56px;
+    color: white;
+    font-weight: 500;
+    margin-bottom: 12px;
+}
+
+.hero_text {
+    font-size: 20px;
+    color: white;
+    max-width: 585px;
+}
+
+.hero {
+    background-color: 343A40;
+    border-radius: 24px;
+    padding: 80px;
+}
+
+.button {
+    text-decoration: none;
+    color: white;
+
+    max-width: 248px;
+    width: 100%;
+
+    display: inline-block;
+    font-size: 16px;
+    padding: 10px 20px;
+
+    background-color: 007BFF;
+    border-radius: 4px;
+    text-align: center;
+}
+
+.button:hover {
+    background-color: rgb(26, 172, 221)
+}
+
+.preview {
+    padding: 24px;
+    border-radius: 24px;
+    border: 1px solid #DEE2E6;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.preview_header > span:not(:last-of-type) {
+    margin-right: 12px;
+}
+
+.preview_date {
+    color: #6C757D;
+    font-size: 16px;
+}
+
+.preview_category {
+    font-size: 16px;
+}
+
+.preview > *:not(:last-child) {
+    margin-bottom: 12px;
+}
+
+.preview_title {
+    display: block;
+    color: #343A40;
+    font-weight: 500;
+    font-size: 28px;
+}
+
+.preview_description {
+    color: #212529;
+    font-size: 16px;
+}
+
+.preview_category_1 {
+    color: #007BFF;
+}
+
+.preview_category_2 {
+    color: #198754;
+}
+
+.preview_category_3 {
+    color: #FF0000;
+}
+
+.preview_category_4 {
+    color: #FF7A00;
+}
