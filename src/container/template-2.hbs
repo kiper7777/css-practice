@@ -1,7 +1,7 @@
 <div class='page'>
   <div class='page_content'>
-    <div class="page_block">
-        <header class='header row g-0'>
+    <header class="page_block">
+        <div class='header row g-0'>
           <div class="col-3">
           {{> logo}}
           </div>  
@@ -10,20 +10,20 @@
             {{> nav list=header}}
             </div>
           </nav>
-        </header>
+        </div>
         {{> divider }}
-    </div>
+    </header>
 
-    <div class="page_block">
+    <section class="page_block">
         <div class="hero">
           {{#with hero}}
             {{> hero title=title text=text}}
             <a class="button" href="{{button.url}}">{{button.text}}</a>
           {{/with}}
         </div>
-    </div>
+    </section>
 
-    <div class="page_block">
+    <section class="page_block">
       <div class="row g-4">
         {{#each preview}}
           <div class="col-6">
@@ -31,40 +31,54 @@
           </div>
         {{/each}}
       </div>
-    </div>
+    </section>
 
-    <div class="page_block">
-      <main class="main">
-        <div class="row">
+    <main class="page_block">
+      <div class="main">
+        <div class="row g-0">
           <div class="col-12">
             <div class="list_header">
-              <div class="row">
+              <div class="row g-0">
                 <div class="col-6">
                   <h2 class="list_title">List of posts</h2>
                 </div>
                 <div class="col-6">
-                  {{#each categories}}
-                    <button class="category_button">{{text}}</button>
-                  {{/each}}
+                  <div class="category_list">
+                    {{#each categories}}
+                      <button class="category_button">{{text}}</button>
+                    {{/each}}
+                  </div>  
                 </div>
               </div>
             </div> 
           </div>   
           <div class="col-7">
-            <div class="list">List of news</div>
+            <div class="list">
+              {{#each news}}
+                {{> cardPost data=this}}
+              {{/each}}
+            </div>
           </div>
 
           <div class="col-5">
-            <aside class="list_aside">List aside</aside>
+            <aside class="list_aside">
+              <div class="about">
+                <h4 class="about_title">About</h4>
+                <p class="about_text">{{about}}</p>
+              </div>
+
+              {{> linkList data=archive title="Archives"}}
+
+               {{> linkList data=social title="Social"}}
+            </aside>
           </div>
         </div>
-      </main>
-    </div>
-    
-     
-    <div class="page_block">
+      </div>
+    </main>
+      
+    <footer class="page_block">
         {{> divider }}
-        <footer class="row footer">
+        <div class="row g-0 footer">
           <div class="col-3">
             {{> logo}}
             <span class="footer_copyright">Copyright 2023-2024</span>
@@ -76,7 +90,7 @@
               {{> nav list=links isVertical=true}}
             </div>
           {{/each}}
-        </footer>
-    </div>
+        </div>
+    </footer >
   </div>
 </div>
