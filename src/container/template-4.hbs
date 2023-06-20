@@ -1,0 +1,60 @@
+
+  <header class='header'>
+    <div class="col-3">
+    {{> logo}}
+    </div>  
+    <nav class='header_nav'>
+      <div class="header_nav_right">
+      {{> nav list=header}}
+      </div>
+    </nav>
+  </header>
+
+ {{#with main}}
+  <div class="main">
+    <div>
+      <img src="{{image}}" alt="Main image" class="main_image">
+      <div class="main_content">
+        <h1 class="main_heading">{{heading}}</h1>
+        <div>
+        <p class="main_description">{{description}}</p>
+        <a class="button main_button" href="{{href}}">{{button}}</a>
+        </div>
+    </div>
+    </div>
+  </div>
+{{/with}}
+
+  {{!-- <main class="blog">
+    {{#each blog}}
+  {{> cardBlog data=this}}
+    {{/each}}
+  </main>
+
+  {{#with form}}
+  <div class="form">
+    <div class="form_content">
+      <h3 class="form_title">{{title}}</h3>
+      <p class="form_info">{{info}}</p>
+    </div>
+    <div class="form_action">
+      <a class="button form_button" href="{{href}}">{{button}}</a>
+    </div>
+  </div>
+  {{/with}} --}}
+     
+      <footer class="footer">
+        <div>
+          {{> logo}}
+          <span class="footer_copyright">Copyright 2023-2024</span>
+        </div>
+
+        {{#each footer}}
+          <div class="col-3">
+            <span class="footer_title">{{title}}</span>
+            {{> nav list=links isVertical=true}}
+          </div>
+        {{/each}}
+      </footer>
+
+
