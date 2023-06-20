@@ -1,0 +1,19 @@
+<div class='featured'>
+  {{#with data}}
+    <div class='card'>
+      <div class='card_icon'>
+        <img
+          src='{{photo}}'
+          alt='Featured photo'
+          class='featured_photo'
+        />
+      </div>
+      <h2 class='card_title'>{{heading}}</h2>
+      <p class='card_text'>{{info}}</p>
+      <a
+        class='card_linkText'
+        href='{{linkUrl}}'
+      >{{linkText}}</a>
+    </div>
+  {{/with}}
+</div>
