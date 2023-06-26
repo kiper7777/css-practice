@@ -26,13 +26,34 @@
         <a href="#" class="messages_link">All messages</a>
       </div>
     {{/with}}
-    <div class="form">Form</div>
+    
+  {{#with form}}
+    <form class="form">
+      <h2 class="form_title">{{title}}</h2>
+
+      <div class="form_input_list">
+        {{#each inputs}}
+          <input type="{{type}}" placeholder="{{placeholder}}" class="form_input" name="{{name}}" 
+          id="form-input-{{id}}" />
+        {{/each}}
+      </div>
+
+      <div class="form_checkbox">
+        <input type="checkbox" name="{{checkbox.name}}" id="{{id}}">
+        <label for="{{checkbox.name}}" >{{checkbox.label}}</label>
+      </div>
+
+      <button type="submit" class="form_button">{{button}}</button>
+      <p class="form_info">{{info}}</p>
+    </form>
+  {{/with}}
+
   </main>
 
   <div class="advantages">
     {{#each advantages}}
-    <div>
-      <strong>{{title}}</strong>
+    <div class="advantages_content">
+      <strong class="title">{{title}}</strong>
       <p>{{text}}</p>
     </div>
     {{/each}}
