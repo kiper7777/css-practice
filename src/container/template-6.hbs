@@ -1,0 +1,91 @@
+
+  <header class='header'>
+    <div class="col-3">
+    {{> logo}}
+    </div>  
+    <nav class='header_nav'>
+      <div class="header_nav_right">
+      {{> nav list=header}}
+      </div>
+    </nav>
+  </header>
+
+<section class="block_content">   
+  <info class="info">
+    {{#with info}}
+      <h1 class="info_title">{{title}}</h1>
+      <p class="info_text">{{description}}</p>
+    {{/with}}
+  </info>
+
+    {{#with form}}
+      <form class="form">
+        
+        <div class="form_input_list">
+          {{#each inputs}}
+            <input type="{{type}}" placeholder="{{placeholder}}" class="form_input" name="{{name}}" 
+            id="form-input-{{id}}" />
+          {{/each}}
+        </div>
+
+        <div class="form_checkbox">
+          <input type="checkbox" name="{{checkbox.name}}">
+          <label for="{{checkbox.name}}" >{{checkbox.label}}</label>
+        </div>
+
+        <button type="submit" class="form_button">{{button}}</button>
+        <p class="form_info">{{info}}</p>
+      </form>
+    {{/with}}
+</section> 
+
+<section class="updates_block">
+  {{#with updates}}
+    <h2 class="updates_title">{{title}}</h2>
+    {{#each list}}
+      <div class="updates">
+        <div class="square">32X32</div>
+        <div class="updates_content">
+          <div class="updates_nickname">{{nickname}}</div>
+          <p class="updates_text">{{description}}</p>
+        </div>
+      </div>
+    {{/each}}
+
+    <a href="{{show_all.url}}" class="updates_link">{{show_all.text}}</a>
+  {{/with}}
+</section>
+
+<section class="expirience">
+  {{#with expirience}}
+  <div class="expirience_badge">{{badge}}</div>
+    <div class="expirience_content">
+      <h1 class="expirience_title">{{title}}</h1>
+
+      <div class="expirience_list">
+        {{#each list}}
+        <div class="expirience_list_content">
+          <strong class="expirience_list_name">{{name}}</strong>
+          <p class="expirience_list_text">{{details}}</p>
+        </div>
+        {{/each}}
+      </div>
+    </div>
+
+  {{/with}}
+</section>
+
+  
+  <footer class="footer">
+    <div>
+      {{> logo}}
+      <span class="footer_copyright">Copyright 2023-2024</span>
+    </div>
+
+    {{#each footer}}
+      <div class="col-3">
+        <span class="footer_title">{{title}}</span>
+        {{> nav list=links isVertical=true}}
+      </div>
+    {{/each}}
+  </footer>
