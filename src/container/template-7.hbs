@@ -1,0 +1,64 @@
+  {{#with header}}
+  <header class='header'>
+    <div class="col-3">
+      <div class='logo'>
+        <span class='badge text-bg-primary'>{{brandName}}</span>
+      </div>
+    </div>  
+    <nav class='header_nav'>
+      <div class="header_nav_right">
+        <div class='nav {{#if isVertical}}nav_vertical{{else}}nav_inline{{/if}}'>
+          {{#each links}}
+            <a href='{{url}}' class='nav_link'>{{text}}</a>
+          {{/each}}
+        </div>
+      </div>
+    </nav>
+  </header>
+  
+  <section class="header_bottom">
+    {{#with ad}}
+      <div class="ad_logo">Ad</div>
+      <a href='{{url}}' class='header_ad'>{{text}}</a>
+    {{/with}}
+
+    <div class="header_text">Users online: {{userOnline}}</div>
+  </section>
+    
+  {{/with}}
+
+<section>
+  {{#with hero}}
+    <div class='hero'>
+      <h2 class='hero_title'>{{title}}</h2>
+      <p class='hero_text'>{{description}}</p>
+      <a class='button hero_button' href='{{button.url}}'>{{button.text}}</a>
+    </div>
+  {{/with}}
+</section>
+
+<section class="about">
+  {{#with about}}
+    <h2 class="about_heading">{{heading}}</h2>
+    <p class="about_info">{{info}}</p>
+  {{/with}}
+</section>
+
+<section class="articles">
+  {{#each articles}}
+  {{/each}}
+</section>
+  
+  <footer class="footer">
+    <div>
+      {{!-- {{> logo}} --}}
+      <span class="footer_copyright">Copyright 2023-2024</span>
+    </div>
+
+    {{#each footer}}
+      <div class="col-3">
+        <span class="footer_title">{{title}}</span>
+        {{> nav list=links isVertical=true}}
+      </div>
+    {{/each}}
+  </footer>
