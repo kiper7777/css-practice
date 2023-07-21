@@ -1,0 +1,254 @@
+<html>
+
+  <head>
+    <title>
+      Slack page
+    </title>
+    <meta charset='utf-8' />
+
+    <link
+      rel='apple-touch-icon'
+      sizes='180x180'
+      href='/fav/apple-touch-icon.png'
+    />
+    <link
+      rel='icon'
+      type='image/png'
+      sizes='32x32'
+      href='/fav/favicon-32x32.png'
+    />
+    <link
+      rel='icon'
+      type='image/png'
+      sizes='16x16'
+      href='/fav/favicon-16x16.png'
+    />
+    <link rel='manifest' href='/fav/site.webmanifest' />
+    <link
+      rel='mask-icon'
+      href='/fav/safari-pinned-tab.svg'
+      color='#5bbad5'
+    />
+    <meta
+      name='msapplication-TileColor'
+      content='#da532c'
+    />
+    <meta name='theme-color' content='#ffffff' />
+
+    <link href='css/normalize.css' rel='stylesheet' />
+
+    {{! <link
+      href='https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css'
+      rel='stylesheet'
+      integrity='sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD'
+      crossorigin='anonymous'
+    /> }}
+
+    <link href='css/slack.css' rel='stylesheet' />
+
+    <meta
+      name='viewport'
+      content='viewport-fit=cover, width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no'
+    />
+
+  </head>
+
+  <body>
+
+    {{!  ↓  ця кострукція показує куди шаблонізатору треба вставляти код з container файлу   }}
+
+    <div class='page'>
+      <section class='page_section'>
+        <div class='page_content hero_section'>
+          <div class='hero'>
+            <div class='hero_content'>
+              <span class='hero_label'>Slack Features</span>
+              <h1 class='hero_title'>One platform for your
+                team and your work</h1>
+              <p class='hero_info double_line'>All the
+                features of Slack work together so you can,
+                too.</p>
+              <div class='hero_buttons'>
+                <a
+                  href='#'
+                  class='button button_primary click'
+                >Try for free</a>
+                <a
+                  href='#'
+                  class='button button_secondary click'
+                >See all features</a>
+              </div>
+
+              <img
+                src='/img/hero.png'
+                alt='Hero'
+                class='hero_image'
+              />
+
+            </div>
+          </div>
+
+          <div class='brands'>
+            <img
+              src='img/brands/airbnb.png'
+              alt='airbnb'
+              class='brands_image'
+            />
+            <img
+              src='img/brands/intuit.png'
+              alt='intuit'
+              class='brands_image'
+            />
+            <img
+              src='img/brands/newscorp.png'
+              alt='newscorp'
+              class='brands_image'
+            />
+            <img
+              src='img/brands/onemedical.png'
+              alt='onemedical'
+              class='brands_image'
+            />
+            <img
+              src='img/brands/sonos.png'
+              alt='sonos'
+              class='brands_image'
+            />
+            <img
+              src='img/brands/target.png'
+              alt='target'
+              class='brands_image'
+            /><img
+              src='img/brands/uber.png'
+              alt='uber'
+              class='brands_image'
+            />
+            <img
+              src='img/brands/va.png'
+              alt='va'
+              class='brands_image'
+            />
+
+          </div>
+
+        </div>
+      </section>
+
+      <section class='page_section page_section_light'>
+        <div class='page_content features_section'>
+          <h2 class='features_title'>Work more easily with
+            everyone</h2>
+          <p class='features_description double_line'>Stay
+            on the same page and make decisions faster by
+            bringing all of your work communication into one
+            place.</p>
+
+          <div class='features_grid_4'>
+            <div class='feat_card'>
+              <span
+                class='icon feat_icon'
+                style="background-image: url('/svg/feature/connect.svg');"
+              ></span>
+              <strong>Slack Connect</strong>
+              <p class='double_line'>Collaborate with teams
+                at other companies the same way you do with
+                teams at your own.</p>
+              <a
+                href='#'
+                class='icon icon_arrow click feat_link'
+              ></a>
+            </div>
+
+            <div class='feat_card'>
+              <span
+                class='icon feat_icon'
+                style="background-image: url('/svg/feature/channels.svg');"
+              ></span>
+              <strong
+                class='feat_card_title'
+              >Channels</strong>
+              <a
+                href='#'
+                class='icon icon_arrow click feat_link'
+              ></a>
+            </div>
+
+            <div class='feat_card'>
+              <span
+                class='icon feat_icon'
+                style="background-image: url('/svg/feature/huddles.svg');"
+              ></span>
+              <strong
+                class='feat_card_title'
+              >Huddles</strong>
+              <a
+                href='#'
+                class='icon icon_arrow click feat_link'
+              ></a>
+            </div>
+
+            <div class='feat_card'>
+              <span
+                class='icon feat_icon'
+                style="background-image: url('/svg/feature/clips.svg');"
+              ></span>
+              <strong class='feat_card_title'>Clips</strong>
+              <a
+                href='#'
+                class='icon icon_arrow click feat_link'
+              ></a>
+            </div>
+
+            <div class='feat_card'>
+              <span
+                class='icon feat_icon'
+                style="background-image: url('/svg/feature/canvas.svg');"
+              ></span>
+              <strong
+                class='feat_card_title'
+              >Canvas</strong>
+              <a
+                href='#'
+                class='icon icon_arrow click feat_link'
+              ></a>
+            </div>
+
+            <div class='feat_card'>
+              <span
+                class='icon feat_icon'
+                style="background-image: url('/svg/feature/messaging.svg');"
+              ></span>
+              <strong
+                class='feat_card_title'
+              >Messaging</strong>
+              <a
+                href='#'
+                class='icon icon_arrow click feat_link'
+              ></a>
+            </div>
+
+            <div class='feat_card'>
+              <span
+                class='icon feat_icon'
+                style="background-image: url('/svg/feature/accessibility.svg');"
+              ></span>
+              <strong
+                class='feat_card_title'
+              >Accessibility</strong>
+              <a
+                href='#'
+                class='icon icon_arrow click feat_link'
+              ></a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </div>
+
+    <script
+      src='https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js'
+    ></script>
+  </body>
+
+</html>
